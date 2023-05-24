@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h3 class="cart-title h1" id="title" ><p>Todo App</p></h3>
+    <h3 id="title">Tod App</h3>
+
+    <ul id="task-list">
+        <li>
+            Görev 1
+        </li>
+        <li>
+            Görev 2
+        </li>
+        <li>
+            Görev 3
+        </li>
+    </ul>
+
+    <script>
+    let sonuc;
+
+    sonuc = document.getElementById("title"); // Sadece id ile işlem yapabiliriz. id seçmeye yarar.
+    sonuc = document.getElementById("title")
+    sonuc = document.getElementById("title").className;
+    sonuc = document.getElementById("title").classList;
+
+    document.getElementById("title").style.fontSize = "30px";
+    document.getElementById("title").style.color = "pink";
+    // document.getElementById("title").style.display = "none";
+
+    
+    document.getElementById("title").innerText = "Todo App";
+    document.getElementById("title").innerHTML = "<p>Todo App</p>";
+
+    sonuc = document.querySelector("#title");
+    sonuc = document.querySelector(".card-header");
+    sonuc = document.querySelector("div");
+
+    sonuc = document.querySelector("li");        
+    sonuc = document.querySelector("li:first-child");         
+    sonuc = document.querySelector("li:last-child");          
+    sonuc = document.querySelector("li:nth-child(2)");    
+
+    console.log(sonuc);
+</script>
+</body>
+
+</html>
